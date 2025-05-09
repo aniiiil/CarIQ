@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# CarIQ   🚗 | Next-Gen Car Sales
 
-First, run the development server:
+CarIQ is a modern, full-stack web application designed for buying and selling vehicles. Built with cutting-edge technologies like **Next.js**, **Supabase**, **Prisma**, and **Tailwind CSS**, CarIQ provides a sleek, responsive, and efficient experience for automotive marketplace users.
+
+#### 🌐 Live Demo
+You can explore a live version of CarIQ at [Live 🚀](https://car-iq-virid.vercel.app)
+
+
+
+## ✨ Features
+
+- 🚘 Post, browse, and search vehicle listings
+- 🙎‍♂️ Admin dashboard to manage car data & Sale Analatics
+- 🤖 Implement Google Gemini AI for car search with image and     to extract car details.
+- 🔐 User authentication via Supabase & Clerk
+- 📸 Upload and display car images
+- 🔎 Filter cars by price, model, type, and more
+- 📱 Fully responsive design for all devices
+- ⚡ Fast and smooth user experience
+
+---
+
+## 🔧 Tech Stack
+
+| Technology     | Purpose                          |
+|----------------|----------------------------------|
+| **Next.js**     | React framework for SSR & routing |
+| **Supabase**    | Backend as a service (auth, DB)  |
+| **Prisma**      | Type-safe ORM for PostgreSQL     |
+| **Tailwind CSS**| Utility-first styling            |
+| **Shadcn/UI**   | Beautiful and accessible UI      |
+
+---
+
+## 📁 Project Structure
+
+The project is organized into several key directories:
+
+
+* app/: Contains the main application components and pages.
+
+* components/: Houses reusable UI components.
+
+* hooks/: Includes custom React hooks for state and effect management.
+
+* lib/: Contains utility functions and libraries.
+
+* prisma/: Holds Prisma schema and migration files.
+
+* public/: Stores static assets like images and fonts.
+
+
+
+
+
+
+
+## 🚀 Getting Started
+
+1. Clone the repository :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/aniiiil/CarIQ.git
+cd CarIQ
+
+```
+2. Navigate to the Project Directory & install Dependencies :
+```bash
+  cd KLIMATE
+  npm install
+```
+3. Set Up Environment Variables :
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+DATABASE_URL=your_postgresql_database_url
+```
+4. Start the Development Server:
+```bash
+   npm start
+```
+Visit http://localhost:3000 to view the app.
+
+
+
+# 🗃 Database
+```bash 
+npx prisma migrate dev
+npx prisma generate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🙌 Contributing
+We welcome contributions! Feel free to fork the repo and submit a pull request.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# 👤 Author
+Anil Prajapat
+[🔗Github](https://github.com/aniiiil)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
