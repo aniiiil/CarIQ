@@ -33,6 +33,7 @@ const HomeSearch = () => {
       toast.error("Please enter a car name")
       return
     }
+    
     router.push(`/cars?search=${encodeURIComponent(searchCar)}`)
   }
 
